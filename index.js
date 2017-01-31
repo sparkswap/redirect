@@ -4,6 +4,6 @@ module.exports = (req ,res) => {
     return 'Please provide the REDIRECT_URL environment variable'
   }
 
-  res.writeHead(301, { REDIRECT_URL })
+  res.writeHead(301, { Location: REDIRECT_URL })
   res.end()
 }
