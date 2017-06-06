@@ -1,9 +1,10 @@
 const { REDIRECT_URL } = process.env
-module.exports = (req ,res) => {
-  if (!REDIRECT_URL) {
-    return 'Please provide the REDIRECT_URL environment variable'
-  }
+if (!REDIRECT_URL) {
+  throw new Error('You must provide the REDIRECT_URL environment variable!')
+}
 
-  res.writeHead(301, { Location: REDIRECT_URL })
+module.exports = (req, res) => {
+  const Location = `${REDIRECT_URL}${req.url.substr(1)}`
+  res.writeHead(301, { Location })
   res.end()
 }
