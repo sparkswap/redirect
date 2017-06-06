@@ -2,14 +2,10 @@
   "name": "now-redirect",
   "version": "1.0.0",
   "description": "Simple redirect service for now.sh",
-  "main": "index.js",
   "repository": "timneutkens/now-redirect",
   "author": "Tim Neutkens",
   "license": "MIT",
-  "dependencies": {
-    "micro": "^6.1.0"
-  },
   "scripts": {
-    "start": "micro -p 80"
+    "start": "node server.js"
   }
 }
