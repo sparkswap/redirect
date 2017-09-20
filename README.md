@@ -3,21 +3,30 @@ Simple microservice to redirect to an url
 
 ## Usage
 
-```
-now -e REDIRECT_URL=https://www.example.com now-examples/now-redirect
-```
+If you haven't installed `now` already, start by following [these instructions](https://zeit.co/docs/getting-started/installation)
 
-This will spin up an instance and give you an unique url, which redirects `<unique-url-here>` to `http://www.example.com`.
-
-To link the instance to your domain use:
+To deploy the service use the following command:
 
 ```
-now alias <unique-url-here> example.com
+now now-examples/redirect
 ```
 
-In this example you've made a redirect from `https://example.com` to `https://www.example.com`.
+You'll be asked to provide `REDIRECT_URL`.
+An example `REDIRECT_URL` is: `https://example.com`
 
-On `now` every subdomain is unique. So `example.com` and `www.example.com` can be 2 different instances. This is useful when you want to, for example, redirect from non-www to www.
+After the deployment is complete you can create an alias for your custom domain:
+
+```
+now alias <unique-deployment-url> example.com
+```
+
+In this example you've made a redirect from:
+```
+https://example.com ⟶ https://www.example.com
+```
+
+
+> On `now` every subdomain is unique. So `example.com` and `www.example.com` can be 2 different instances. This is useful when you want to, for example, redirect from non-www to www.
 
 #### Alternatives
 
