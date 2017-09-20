@@ -28,10 +28,6 @@ https://example.com ⟶ https://www.example.com
 
 > On `now` every subdomain is unique. So `example.com` and `www.example.com` can be 2 different instances. This is useful when you want to, for example, redirect from non-www to www.
 
-#### Alternatives
-
-https://github.com/vdanchenkov/now-redirect
-
 ## Authors
 
 - Tim Neutkens ([@timneutkens](https://github.com/timneutkens))
