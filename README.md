@@ -12,7 +12,7 @@ now now-examples/redirect
 ```
 
 You'll be asked to provide `REDIRECT_URL`.
-An example `REDIRECT_URL` is: `https://example.com`
+An example `REDIRECT_URL` is: `https://www.example.com`
 
 After the deployment is complete you can create an alias for your custom domain:
 
