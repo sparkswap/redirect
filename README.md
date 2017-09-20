@@ -31,4 +31,4 @@ https://example.com ⟶ https://www.example.com
 ## Authors
 
 - Tim Neutkens ([@timneutkens](https://github.com/timneutkens))
-- Nathan Rajlich ([@TooTallNate](https://twitter.com/TooTallNate) – ▲ZEIT
+- Nathan Rajlich ([@TooTallNate](https://twitter.com/TooTallNate) – ▲ZEIT)
