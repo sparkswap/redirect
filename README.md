@@ -1,6 +1,8 @@
 # Now Redirect
 Simple microservice to redirect to an url
 
+Check out the `strip-path` branch for a redirect without the original request url.
+
 ## Usage
 
 If you haven't installed `now` already, start by following [these instructions](https://zeit.co/docs/getting-started/installation)
