@@ -9,7 +9,7 @@ const STATUS = parseInt(process.env.STATUS, 10) || 301
 const PORT = parseInt(process.env.PORT, 10) || 80
 
 createServer((req, res) => {
-  const Location = `${REDIRECT_URL}${req.url.substr(1)}`
+  const Location = `${REDIRECT_URL}`
   res.writeHead(STATUS, { Location })
   res.end()
 }).listen(PORT)
