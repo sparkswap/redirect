@@ -10,7 +10,9 @@
   },
   "now": {
     "env": [
-      "REDIRECT_URL"
+      "REDIRECT_URL",
+      "STATUS",
+      "STRIP_PATH"
     ]
   }
 }

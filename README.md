@@ -1,8 +1,6 @@
 # Now Redirect
 Simple microservice to redirect to an url
 
-Check out the `strip-path` branch for a redirect without the original request url.
-
 ## Usage
 
 If you haven't installed `now` already, start by following [these instructions](https://zeit.co/docs/getting-started/installation)
@@ -31,6 +29,8 @@ https://example.com ⟶ https://www.example.com
 ```
 STATUS=301; now
 ```
+
+Use the STRIP_PATH environment variable to control whether the redirect includes the original path.
 
 
 > On `now` every subdomain is unique. So `example.com` and `www.example.com` can be 2 different instances. This is useful when you want to, for example, redirect from non-www to www.
